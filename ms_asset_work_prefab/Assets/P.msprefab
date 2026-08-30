@@ -1,0 +1,45 @@
+MSASSET1
+type: Prefab
+guid: EB83A1B54CCB4955
+name: PS
+
+{
+  "guid": "EB83A1B54CCB4955",
+  "msprefab": "1",
+  "name": "PS",
+  "roots": [
+    {
+      "active": true,
+      "components": [
+        {
+          "fields": {
+            "n": 99,
+            "t": 3.5
+          },
+          "type": "MsConfig"
+        }
+      ],
+      "name": "PS",
+      "parent": null,
+      "transform": {
+        "pos": [
+          1,
+          2,
+          3
+        ],
+        "rot": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ]
+}
+fnv: 0xEBE7FD368B955603

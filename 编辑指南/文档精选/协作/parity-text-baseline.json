@@ -1,0 +1,1127 @@
+[
+    {
+        "Name":  "MenuSubtitleFormat",
+        "Value":  "全模式音游 · {0} 种玩法引擎",
+        "SourceFiles":  "UiText.cs"
+    },
+    {
+        "Name":  "MenuPlayGame",
+        "Value":  "▶ 开始游戏",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuEditChart",
+        "Value":  "✏ 编辑谱面",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuDanChallenge",
+        "Value":  "🏆 段位挑战",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuMp",
+        "Value":  "🌐 联机",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuReplay",
+        "Value":  "🎬 回放",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuFolder",
+        "Value":  "📂 曲库管理",
+        "SourceFiles":  "MainForm.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuSettings",
+        "Value":  "⚙ 设置",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuCalibration",
+        "Value":  "🎯 校准",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuAiDemo",
+        "Value":  "🤖 AI 演示",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuLayoutEditor",
+        "Value":  "📐 布局编辑器",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuPlayerInfo",
+        "Value":  "👤 玩家信息",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuMyData",
+        "Value":  "📊 我的数据",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuOpenLog",
+        "Value":  "📋 打开日志",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuTheme",
+        "Value":  "🎨 主题",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuAbout",
+        "Value":  "ℹ 关于",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuExit",
+        "Value":  "✖ 退出",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuLoopComposer",
+        "Value":  "🎵 回环作曲（创新玩法）",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuMiniMania",
+        "Value":  "🎮 迷你 mania（引擎 Demo）",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuEngineUiDemo",
+        "Value":  "✨ 引擎 UI 演示",
+        "SourceFiles":  "MainForm.cs,EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuHint",
+        "Value":  "💡 快捷键：F1 显示/隐藏菜单栏 · Milestone v6.0",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "MenuStatsFormat",
+        "Value":  "🎮 游玩 {0} 次 · 累计命中 {1} 音符 · 🏆 最高ACC {2}% · 最佳连击 {3}x",
+        "SourceFiles":  "UiText.cs"
+    },
+    {
+        "Name":  "AboutText",
+        "Value":  "Milestone（里程碑）v6.0\" + NL + NL + \"全音游模式：osu!mania / Malody / Phigros / Arcaea / Cytus / osu!standard / taiko / catch / ADOFAI / IIDX\" + NL + NL + \"空格=Pause · R=重开 · A=自动 · S=跳过空白 · M=切换模式部件 · ESC=退出\" + NL + \"F1=显示/隐藏菜单栏",
+        "SourceFiles":  "UiText.cs"
+    },
+    {
+        "Name":  "AboutCaption",
+        "Value":  "关于",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "StatusLoopComposer",
+        "Value":  "🎵 回环作曲：录（D F J K / 点环写谱）→ 奏（实时演奏）→ 扩（3 满分解锁）",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "StatusLayoutEditor",
+        "Value":  "📐 布局编辑器：拖动各元素到想要的位置 · ESC 保存并退出",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "StatusPlayPrefix",
+        "Value":  "▶ ",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongTitle",
+        "Value":  "🎵 选歌",
+        "SourceFiles":  "SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongFilterAll",
+        "Value":  "全部模式",
+        "SourceFiles":  "SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongFilterMania",
+        "Value":  "Mania",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongFilterPhigros",
+        "Value":  "Phigros",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongFilterArcaea",
+        "Value":  "Arcaea",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongFilterCytus",
+        "Value":  "Cytus",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongFilterOsuStandard",
+        "Value":  "osu!standard",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongFilterAdofai",
+        "Value":  "ADOFAI",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongFilterIidx",
+        "Value":  "IIDX",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongFilterMaimai",
+        "Value":  "maimai",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongFilterLoopComposer",
+        "Value":  "回环作曲",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongPlayCurrent",
+        "Value":  "▶ 游玩当前",
+        "SourceFiles":  "SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongFolder",
+        "Value":  "📂 曲库",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongGoHome",
+        "Value":  "🏠 主菜单",
+        "SourceFiles":  "SongCardView.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongBackToSongs",
+        "Value":  "🎵 返回选歌",
+        "SourceFiles":  "SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongPlayStart",
+        "Value":  "▶ 开始游玩",
+        "SourceFiles":  "SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongRandom",
+        "Value":  "🎲 随机",
+        "SourceFiles":  "SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongEditThisChart",
+        "Value":  "✏ 编辑此谱面",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongDiffHint",
+        "Value":  "选择难度（单击选中 · 双击游玩）",
+        "SourceFiles":  "SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongDiffTip",
+        "Value":  "💡 单击选中难度 · 双击开始游玩",
+        "SourceFiles":  "SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongUnknownArtist",
+        "Value":  "未知作者",
+        "SourceFiles":  "SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongDefaultDiff",
+        "Value":  "Normal",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongPlaceholderDash",
+        "Value":  "--",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,SettingsPanel.cs,FolderPanel.cs,EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongK",
+        "Value":  "K",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,SettingsPanel.cs,FolderPanel.cs,EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongDash",
+        "Value":  "—",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongDiffCountSuffix",
+        "Value":  " 难度",
+        "SourceFiles":  "SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongDiffCountSuffix2",
+        "Value":  " 个难度",
+        "SourceFiles":  "SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongModeBadgeFormat",
+        "Value":  "{0} · {1}",
+        "SourceFiles":  "UiText.cs"
+    },
+    {
+        "Name":  "SongEmptyLibrary",
+        "Value":  "曲库为空\" + NL + \"请先「📂 打开谱面文件夹」指定曲库目录",
+        "SourceFiles":  "UiText.cs"
+    },
+    {
+        "Name":  "SongOptionPreset",
+        "Value":  "判定预设",
+        "SourceFiles":  "SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongOptionVolume",
+        "Value":  "音量",
+        "SourceFiles":  "SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongOptionScrollSpeed",
+        "Value":  "流速",
+        "SourceFiles":  "SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongOptionSlant",
+        "Value":  "斜轨",
+        "SourceFiles":  "SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongOption3D",
+        "Value":  "3D 渲染",
+        "SourceFiles":  "SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SongOptionAuto",
+        "Value":  "自动",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,SettingsPanel.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsGameSpeed",
+        "Value":  "流速",
+        "SourceFiles":  "SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsGameDelayMs",
+        "Value":  "延迟(ms)",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsGameVolume",
+        "Value":  "音量",
+        "SourceFiles":  "SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsGameKeyCount",
+        "Value":  "键位(列数)",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsGameJudgeBase",
+        "Value":  "判定基准",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsGameAutoplay",
+        "Value":  "自动游玩",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsGameAutoDelay",
+        "Value":  "🎯 自动调整延迟",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsGameJudgeBaseBottom",
+        "Value":  "音符下端",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsGameJudgeBaseCenter",
+        "Value":  "音符中心",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsGameJudgeBaseTop",
+        "Value":  "音符上端",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsJudgeColName",
+        "Value":  "名称",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsJudgeColWindow",
+        "Value":  "窗口(ms)",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsJudgeColScore",
+        "Value":  "得分",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsJudgeColWeight",
+        "Value":  "权重",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsJudgePreset",
+        "Value":  "预设",
+        "SourceFiles":  "SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsJudgePresetName",
+        "Value":  "预设名称",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsJudgeApplyPreset",
+        "Value":  "应用预设",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsJudgeSavePreset",
+        "Value":  "💾 保存判定预设",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsJudgeImportPreset",
+        "Value":  "📥 导入预设",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsJudgeMissRow",
+        "Value":  "MISS",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsJudgeHint",
+        "Value":  "表格最后一行 MISS 为判定失败的窗口；选择预设即在表格中预览数值",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsScoreComboCap",
+        "Value":  "连击加成上限",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiRightPanel",
+        "Value":  "显示右侧数据面板",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiMinimal",
+        "Value":  "极简模式",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiFps",
+        "Value":  "显示 FPS",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiFullscreen",
+        "Value":  "全屏（F11）",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiBorderless",
+        "Value":  "无边框窗口",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiShowArt",
+        "Value":  "背景显示曲绘",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiAcc",
+        "Value":  "ACC",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,SettingsPanel.cs,EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiScore",
+        "Value":  "得分",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiCombo",
+        "Value":  "连击",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiHud",
+        "Value":  "命中统计",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiJudgeText",
+        "Value":  "判定文字",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiDevText",
+        "Value":  "偏差数字",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiBurst",
+        "Value":  "打击特效",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiShake",
+        "Value":  "屏幕震动",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiOsuField",
+        "Value":  "osu!std 4:3 框定游玩区",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiQuality",
+        "Value":  "画质",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiQualityLow",
+        "Value":  "低（老设备 ≥60帧）",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiQualityMid",
+        "Value":  "中（均衡）",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiQualityHigh",
+        "Value":  "高（全特效）",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiQualityAuto",
+        "Value":  "自动（动态调档）",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiQualityHint",
+        "Value":  "低画质：关闭曲绘/特效/图表，老设备也流畅；自动：掉帧自动降档，流畅自动回升",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiShow",
+        "Value":  "显示",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,SettingsPanel.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiSlant",
+        "Value":  "斜轨（斜向轨道）",
+        "SourceFiles":  "SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiCamera3D",
+        "Value":  "3D 渲染",
+        "SourceFiles":  "SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiPitch",
+        "Value":  "俯仰",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiYaw",
+        "Value":  "偏航",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiDepth",
+        "Value":  "深度",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiHitFx",
+        "Value":  "打击特效",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiResult",
+        "Value":  "结算画面",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiTheme",
+        "Value":  "UI 主题",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiTransition",
+        "Value":  "转场风格",
+        "SourceFiles":  "SettingsPanel.cs,EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiThemeBlue",
+        "Value":  "深空蓝",
+        "SourceFiles":  "SettingsPanel.cs,EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiThemePurple",
+        "Value":  "极夜紫",
+        "SourceFiles":  "SettingsPanel.cs,EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiThemeCyan",
+        "Value":  "晨光青",
+        "SourceFiles":  "SettingsPanel.cs,EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiTransitionRandom",
+        "Value":  "随机",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiTransitionBeam",
+        "Value":  "光束",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiTransitionCircle",
+        "Value":  "圆环",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiTransitionSlide",
+        "Value":  "推拉",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsUiCameraHint",
+        "Value":  "相机俯仰 0~60° · 偏航 -30~30° · 深度 0.4~2.5",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsGradeInfo",
+        "Value":  "评级按 ACC 固定档位：\" + NL + \"SSS ≥100 · SS ≥98 · S ≥95 · A ≥90\" + NL + \"B ≥80 · C ≥70 · D \u003c70",
+        "SourceFiles":  "UiText.cs"
+    },
+    {
+        "Name":  "SettingsSoundStyle",
+        "Value":  "打击音效风格",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSoundClassic",
+        "Value":  "经典",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSoundElectronic",
+        "Value":  "电子",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSoundWood",
+        "Value":  "木鱼",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSoundPerJudge",
+        "Value":  "按判定区分音效",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSoundPreviewJudge",
+        "Value":  "🔊 试听判定音",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSoundPreviewMiss",
+        "Value":  "🔊 试听 MISS",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSoundEnable",
+        "Value":  "启用打击音效",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSoundVolume",
+        "Value":  "音效音量",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinHitLineY",
+        "Value":  "判定线位置",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinSlant",
+        "Value":  "斜轨强度",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinPlayScale",
+        "Value":  "界面缩放",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinNoteThick",
+        "Value":  "音符厚度",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinJudgeFont",
+        "Value":  "判定字大小",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinJudgePos",
+        "Value":  "判定位置",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinDevPos",
+        "Value":  "延迟位置",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinBgColor",
+        "Value":  "背景色",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinBgDim",
+        "Value":  "背景亮度",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinPreset",
+        "Value":  "配色方案",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinHitLineColor",
+        "Value":  "判定线颜色",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinHitLineThick",
+        "Value":  "判定线粗细",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinHitLineStyle",
+        "Value":  "判定线样式",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinHitLineGlow",
+        "Value":  "判定线辉光",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinHoldAlpha",
+        "Value":  "长条透明度",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinHoldStyle",
+        "Value":  "长条样式",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinJudgePosOnLanes",
+        "Value":  "轨道上方",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinJudgePosLine",
+        "Value":  "判定线中央",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinJudgePosTop",
+        "Value":  "顶部中央",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinJudgePosHidden",
+        "Value":  "隐藏",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinDevPosPanel",
+        "Value":  "右侧面板",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinPresetDefault",
+        "Value":  "默认",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinPresetNeon",
+        "Value":  "霓虹",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinPresetCandy",
+        "Value":  "糖果",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinPresetMono",
+        "Value":  "黑白",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinPresetBlueBlock",
+        "Value":  "蓝白块（4K）",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinLineSolid",
+        "Value":  "实线",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinLineDashed",
+        "Value":  "虚线",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinLineDotted",
+        "Value":  "点线",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinHoldSolid",
+        "Value":  "实心",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinHoldGlow",
+        "Value":  "辉光",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinHoldOutline",
+        "Value":  "描边",
+        "SourceFiles":  "SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinEditLayout",
+        "Value":  "📐 在皮肤中编辑布局",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinRandomColors",
+        "Value":  "🎲 随机配色",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinApplySave",
+        "Value":  "💾 应用并保存皮肤",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinExportJson",
+        "Value":  "📤 导出 JSON",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinImportJson",
+        "Value":  "📥 导入 JSON",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSkinReset",
+        "Value":  "恢复默认",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSavePlayerName",
+        "Value":  "玩家名称",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSavePlayerAvatar",
+        "Value":  "玩家头像",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSaveUploadAvatar",
+        "Value":  "上传头像",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSaveClear",
+        "Value":  "清除",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSavePlayer",
+        "Value":  "💾 保存玩家信息",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSaveExportData",
+        "Value":  "💾 导出玩家数据",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSaveImportData",
+        "Value":  "📂 导入玩家数据",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsKeysKeyCount",
+        "Value":  "轨道数",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsKeysKeys",
+        "Value":  "按键(按键录入)",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsKeysApply",
+        "Value":  "💾 应用键位",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsKeysHint",
+        "Value":  "点击输入框后依次按下要绑定的按键（退格删除最后一个，Del 清空）",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsGoHome",
+        "Value":  "🏠 返回主菜单",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsKeyCountLabel",
+        "Value":  "4K",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderTitle",
+        "Value":  "📂 曲库管理",
+        "SourceFiles":  "MainForm.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderPathPrefix",
+        "Value":  "📁 ",
+        "SourceFiles":  "FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderChooseFolder",
+        "Value":  "📂 选择文件夹",
+        "SourceFiles":  "FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderImportFiles",
+        "Value":  "📎 导入谱面文件",
+        "SourceFiles":  "FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderScanZip",
+        "Value":  "🗜 扫描并解压容器",
+        "SourceFiles":  "FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderRefresh",
+        "Value":  "↻ 刷新",
+        "SourceFiles":  "MainForm.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderOpenDir",
+        "Value":  "📂 打开所在文件夹",
+        "SourceFiles":  "FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderDelete",
+        "Value":  "🗑 删除所选",
+        "SourceFiles":  "FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderCopyPath",
+        "Value":  "📋 复制路径",
+        "SourceFiles":  "FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderGoSongs",
+        "Value":  "🎵 去选歌",
+        "SourceFiles":  "FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderGoHome",
+        "Value":  "🏠 主菜单",
+        "SourceFiles":  "SongCardView.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderFileListTitle",
+        "Value":  "🎵 谱面文件",
+        "SourceFiles":  "FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderNoCharts",
+        "Value":  "（该文件夹没有匹配的谱面文件）",
+        "SourceFiles":  "FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderSelectHint",
+        "Value":  "选择文件以查看完整路径",
+        "SourceFiles":  "FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderPathPrefixSel",
+        "Value":  "📄 ",
+        "SourceFiles":  "FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderExtMalody",
+        "Value":  "Malody",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderExtSm",
+        "Value":  "SM",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,SettingsPanel.cs,FolderPanel.cs,EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderExtSsc",
+        "Value":  "SSC",
+        "SourceFiles":  "MainForm.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderExtQuaver",
+        "Value":  "Quaver",
+        "SourceFiles":  "SettingsPanel.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderExtArc",
+        "Value":  "Arc",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,FolderPanel.cs,EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderExtCytus",
+        "Value":  "Cytus",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderExtContainer",
+        "Value":  "容器",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderExtFile",
+        "Value":  "文件",
+        "SourceFiles":  "MainForm.cs,SongCardView.cs,SettingsPanel.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderDialogDesc",
+        "Value":  "选择曲库文件夹（作为内嵌选歌的目录）",
+        "SourceFiles":  "FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "FolderRobotDialogDesc",
+        "Value":  "选择包含压缩包的文件夹（.mcz/.osz/.zip 将自动解压）",
+        "SourceFiles":  "FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "UiBack",
+        "Value":  "←  返回",
+        "SourceFiles":  "EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "UiPageSongs",
+        "Value":  "🎵 选歌",
+        "SourceFiles":  "SongCardView.cs,UiText.cs"
+    },
+    {
+        "Name":  "UiPageSettings",
+        "Value":  "⚙ 设置",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "UiPageHome",
+        "Value":  "🏠 主菜单",
+        "SourceFiles":  "SongCardView.cs,FolderPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "UiNoCharts",
+        "Value":  "未找到谱面，请将谱面放入 Chart 目录（或用 MainForm 选歌）。",
+        "SourceFiles":  "EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "UiSwatchGlass",
+        "Value":  "■ 玻璃质感",
+        "SourceFiles":  "EngineUiDemo.cs,UiText.cs"
+    },
+    {
+        "Name":  "WindowTitle",
+        "Value":  "Milestone · 里程碑",
+        "SourceFiles":  "MainForm.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSectionNames.游戏",
+        "Value":  "游戏",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSectionNames.判定",
+        "Value":  "判定",
+        "SourceFiles":  "SongCardView.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSectionNames.分数",
+        "Value":  "分数",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSectionNames.界面",
+        "Value":  "界面",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSectionNames.评级",
+        "Value":  "评级",
+        "SourceFiles":  "MainForm.cs,SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSectionNames.音效",
+        "Value":  "音效",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSectionNames.皮肤",
+        "Value":  "皮肤",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSectionNames.存档",
+        "Value":  "存档",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    },
+    {
+        "Name":  "SettingsSectionNames.键位",
+        "Value":  "键位",
+        "SourceFiles":  "SettingsPanel.cs,UiText.cs"
+    }
+]

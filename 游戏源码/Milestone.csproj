@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>Milestone</AssemblyName>
+    <RootNamespace>ChartPlayer</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Version>4.0.0</Version>
+
+    <!-- t62 四目录迁移：OutputPath 指向 输出产物\bin（游戏源码\..\输出产物\bin）；$(Configuration) 保 Release\net8.0-windows\win-x64 传统子路径（captain 构建/取证沿用） -->
+    <OutputPath>..\输出产物\bin\$(Configuration)\</OutputPath>
+
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <PublishTrimmed>false</PublishTrimmed>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <PublishReadyToRun>false</PublishReadyToRun>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Direct2D 硬件加速渲染（GPU） -->
+    <PackageReference Include="SharpDX" Version="4.2.0" />
+    <PackageReference Include="SharpDX.Direct2D1" Version="4.2.0" />
+    <PackageReference Include="SharpDX.DXGI" Version="4.2.0" />
+    <PackageReference Include="SharpDX.Mathematics" Version="4.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- t62 四目录迁移：源码=本工程内 源码\（SDK 自动包含）；引擎=..\引擎源码\engine（ProjectReference）；
+         其他/构建产物/编辑指南/输出产物 均在工程外，无需排除 -->
+    <Compile Remove="obj\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- 引擎示例/演示会编译进游戏（DemoRunner/MiniManiaForm/EngineGame 等由游戏层引用） -->
+    <Compile Include="..\引擎源码\engine\Samples\**\*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\引擎源码\engine\MilestoneEngine.csproj" />
+  </ItemGroup>
+</Project>

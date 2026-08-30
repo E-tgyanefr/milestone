@@ -1,0 +1,220 @@
+{
+  "books": [
+    {
+      "id": "engine_guide",
+      "title": "Milestone 工程说明（工程地图 · 模式与UI更改 · 引擎改动 · 打包与命令）",
+      "source_md": "编辑指南/工程说明.md",
+      "target_pdf": "编辑指南/PDF/工程说明.pdf",
+      "chars_estimated": 17900,
+      "chars_unit": "UTF-8 字符数（约）",
+      "sections": [
+        {
+          "no": 0,
+          "title": "目录",
+          "chars": 150
+        },
+        {
+          "no": 1,
+          "title": "工程地图：四目录树与关键文件职责",
+          "chars": 5600
+        },
+        {
+          "no": 2,
+          "title": "模式更改：加/改一个音游模式",
+          "chars": 1800
+        },
+        {
+          "no": 3,
+          "title": "UI 更改：改文字 / 布局 / 主题 / 图标",
+          "chars": 2400
+        },
+        {
+          "no": 4,
+          "title": "引擎改动：Ruleset / 判定 / 渲染 / 引擎工具 CLI",
+          "chars": 1900
+        },
+        {
+          "no": 5,
+          "title": "打包与命令：build / publish / pack / 快捷方式",
+          "chars": 2700
+        },
+        {
+          "no": 6,
+          "title": "文档索引与路径映射",
+          "chars": 1300
+        },
+        {
+          "no": 7,
+          "title": "附录：运行/调试速查与常见坑",
+          "chars": 1300
+        },
+        {
+          "no": 8,
+          "title": "素材与内容清单（实测目录结构）",
+          "chars": 2700
+        }
+      ],
+      "screenshots": [
+        {
+          "id": "shot-map",
+          "desc": "四目录树：资源管理器展开 游戏源码/引擎源码/编辑指南/输出产物 四个目录（1280×800 窗口）",
+          "source": "资源管理器截图（人工）",
+          "status": "placeholder-待补"
+        },
+        {
+          "id": "shot-menu",
+          "desc": "主菜单界面截图，标注「▶ 开始游戏」按钮位置",
+          "source": "Milestone.exe --shellshot <dir> 的 menu.png",
+          "status": "placeholder-待补"
+        },
+        {
+          "id": "shot-settings",
+          "desc": "设置页（判定基准行/刷新率行）",
+          "source": "--shellshot settings.png 或人工截图",
+          "status": "placeholder-待补"
+        },
+        {
+          "id": "shot-editor",
+          "desc": "编辑器三栏（左曲目/中画布/右 Tab）",
+          "source": "Milestone.exe --edshot <dir>",
+          "status": "placeholder-待补"
+        },
+        {
+          "id": "shot-shellshot-out",
+          "desc": "--shellshot 三页 PNG 缩略（回归取证法示意）",
+          "source": "运行 --shellshot 后目录",
+          "status": "placeholder-待补"
+        },
+        {
+          "id": "shot-publish",
+          "desc": "发布件目录：Milestone.exe + Chart/Player/Log 内容根示意图",
+          "source": "资源管理器截图（人工）",
+          "status": "placeholder-待补"
+        }
+      ]
+    },
+    {
+      "id": "beginner_guide",
+      "title": "零基础更改指南：第一次动手改 Milestone",
+      "source_md": "编辑指南/零基础更改指南.md",
+      "target_pdf": "编辑指南/PDF/零基础更改指南.pdf",
+      "chars_estimated": 7200,
+      "chars_unit": "UTF-8 字符数（约）",
+      "sections": [
+        {
+          "no": 0,
+          "title": "开始之前（工具检查/备份习惯）",
+          "chars": 1100
+        },
+        {
+          "no": 1,
+          "title": "任务1：改主菜单按钮文字",
+          "chars": 1200
+        },
+        {
+          "no": 2,
+          "title": "任务2：改主题色",
+          "chars": 1200
+        },
+        {
+          "no": 3,
+          "title": "任务3：加一个模式预设",
+          "chars": 1200
+        },
+        {
+          "no": 4,
+          "title": "任务4：打包并生成桌面快捷方式",
+          "chars": 1100
+        },
+        {
+          "no": 5,
+          "title": "任务5：做一张 4K Mania 谱并玩到它",
+          "chars": 1400
+        },
+        {
+          "no": 6,
+          "title": "常遇到的问题（排查表）",
+          "chars": 800
+        },
+        {
+          "no": 7,
+          "title": "下一步",
+          "chars": 250
+        },
+        {
+          "no": "A",
+          "title": "附录A：术语表",
+          "chars": 700
+        },
+        {
+          "no": "B",
+          "title": "附录B：谱面 JSON 常用字段速查（.mil）",
+          "chars": 900
+        },
+        {
+          "no": "C",
+          "title": "附录C：找不到按钮文字三步搜索法",
+          "chars": 400
+        }
+      ],
+      "screenshots": [
+        {
+          "id": "shot-w1-before",
+          "desc": "任务1 改前：主菜单按钮「▶ 开始游戏」",
+          "source": "改前 --shellshot menu.png",
+          "status": "placeholder-待补"
+        },
+        {
+          "id": "shot-w1-after",
+          "desc": "任务1 改后：「▶ 开始游玩」",
+          "source": "改后 --shellshot menu.png",
+          "status": "placeholder-待补"
+        },
+        {
+          "id": "shot-w2-glass",
+          "desc": "任务2 玻璃透明度 26→60 效果对比",
+          "source": "改后截图",
+          "status": "placeholder-待补"
+        },
+        {
+          "id": "shot-w3-preset",
+          "desc": "任务3 EnginePlay --preset mania5 --headless 输出截图",
+          "source": "PowerShell 运行输出",
+          "status": "placeholder-待补"
+        },
+        {
+          "id": "shot-w4-desktop",
+          "desc": "任务4 桌面 Milestone 快捷方式",
+          "source": "桌面截图",
+          "status": "placeholder-待补"
+        },
+        {
+          "id": "shot-w5-json",
+          "desc": "任务5 「我的第一张谱.mil」记事本 JSON 截图",
+          "source": "记事本截图",
+          "status": "placeholder-待补"
+        },
+        {
+          "id": "shot-w5-songs",
+          "desc": "任务5 选歌页出现「我的第一张谱」",
+          "source": "--shellshot songs.png",
+          "status": "placeholder-待补"
+        },
+        {
+          "id": "shot-build-ok",
+          "desc": "dotnet build 0 警告 0 错误 输出示例",
+          "source": "PowerShell 输出",
+          "status": "placeholder-待补"
+        }
+      ]
+    }
+  ],
+  "generation": {
+    "toolchain_primary": "md2html.ps1（编辑指南/工具脚本/，Markdown 子集转换）→ Edge headless print-to-pdf",
+    "edge_path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "command_example": "& \"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --headless --disable-gpu --no-pdf-header-footer --print-to-pdf=\"编辑指南\\PDF\\工程说明.pdf\" \"file:///D:/Users/etgya/Desktop/milestone/编辑指南/工程说明.html\"",
+    "toolchain_fallback": "Word COM（WINWORD.EXE 存在）：Documents.Add → 导入 HTML → ExportAsFixedFormat(17, pdf)",
+    "verify": "页数>0；试玩视觉抽查 3 页无方块/无粘连；文本可抽取（PDF 检索关键字『开始游戏』）",
+    "notes": "截图占位待 试玩/取证人 补图后重生成 PDF；pdf-sources.json 为生成清单（标题/章节/字数/占位）"
+  }
+}

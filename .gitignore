@@ -1,0 +1,22 @@
+﻿# milestone 项目基线
+build/
+bin/
+obj/
+__pycache__/
+*.exe
+*.dll
+*.out
+*.log
+*.bmp
+*.png
+*.wav
+*.mcfg
+.agent-teams/
+cs_asset_work/
+cs_scene_work/
+g9_probe_root/
+ms_*_work/
+_devtmp/
+*_work/
+输出产物/
+构建产物/
