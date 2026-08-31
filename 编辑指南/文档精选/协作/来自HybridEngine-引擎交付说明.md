@@ -2,7 +2,9 @@
 
 > 交接方：HybridEngine 引擎团队（引擎专属职责——引擎/编辑器/ABI/SDK）
 > 接收方：milestone（ChartPlayer）游戏编写与移植团队（游戏内容/玩法/UI 业务层）
-> 时间：2026-08-31 · 引擎版本戳：`d1d54f1` · 引擎验收门：**186/186**（core 24 / platform 21 / bind 40 / editor 94 / render3d 7，dev+release-LTO 双链）· ABI：**81 导出**
+> 时间：2026-08-31 · 引擎版本戳：`e012994` · 引擎验收门：**188/188**（core 24 / platform 21 / bind 42 / editor 94 / render3d 7，dev+release-LTO 双链）· ABI：**82 导出**
+
+> **v1.1 增补（2026-08-31）**：新增 `ms_rnd_clip_push_rotated`（并计数 81→82；矩阵 186→188；`ms_engine_render` 无命令黄金帧 `4634E387E024BE90` 不变；GUI 平面锚点因 t-text-native 文本光栅按视图缩放刷新为 **`855D0AC4CBCD78C2`**——C#/Python 同命令同值已验证）。
 
 ## 1. EngineSDK 位置与刷新（游戏团队的唯一入口）
 
@@ -31,12 +33,12 @@ D:\EngineSDK\
 | 平面 | API 概况 |
 |---|---|
 | 引擎/场景 | ms_engine_create/tick/render/pump；Scene/GameObject/Component/Transform（世界坐标辅助）；八回调生命周期 |
-| **图形** | `ms_rnd_*` 14：Clear/ClearRect/FillRect/FillRoundedRect/DrawLine/FillCircle/DrawCircle/FillTriangle/FillQuad/BlitRect/**BlitRectAlpha**/**ClipPush/ClipPop**（矩形栈）+ `ms_text_draw/measure`（**CJK 原生、掩码零拷贝**：HUD 文本基准 ~13x(dev)/~230x(LTO)）；颜色=**0xAARRGGBB（A 生效）**——半透遮罩/渐变/辉光/MISS 红光直接可用 |
+| **图形** | `ms_rnd_*` 15：Clear/ClearRect/FillRect/FillRoundedRect/DrawLine/FillCircle/DrawCircle/FillTriangle/FillQuad/BlitRect/**BlitRectAlpha**/**ClipPush/ClipPop**（矩形栈）+ **ClipPushRotated**（旋转矩形——`(cx,cy,w,h,angleRad)`；v1.1 新增——**斜劈/分离位移精确切分**：沿任意角度线裁剪内容，做"对角劈开/扇形分离/位移错位"类视觉直接可用；angle=0 与矩形 push 逐位等价；同栈 ≤8 深）+ `ms_text_draw/measure`（**CJK 原生、掩码零拷贝**：HUD 文本基准 ~13x(dev)/~230x(LTO)——v1.1 起掩码按 `size×viewport.scale` 原生光栅（大窗/高 DPI 文本点对点清晰）；颜色=**0xAARRGGBB（A 生效）**——半透遮罩/渐变/辉光/MISS 红光直接可用 |
 | **输入** | `ms_input_*` 13：键（vk 直通）/轴/动作 + **鼠标**（x,y/design-x,y 设计面/三键按住与边沿/滚轮帧累计） |
 | **音频** | `ms_audio_*` 8：open/close/play/pause/seek/position/is_open/volume（WinMM；句柄≥10；单线程；时基 ms；多句柄并存）——**偏移校准/BPM 对音/判定音首前提** |
 | **资产** | `ms_assets_*` 9：load/type/guid/unref/set_root/save/save_text/**list**（JSON 数组）/texture_pixels（零拷贝借出）；**PNG 即用**（8bit 非隔行 RGB/RGBA，自实现 inflate+CRC/adler32 严格校验；坏文件拒绝）；BMP 不变；.mscene/.msprefab 场景与预制件 |
 
-**框架约定**：设计平面=**1280×800**（parity）；窗口面=Letterbox 按视口映射；命令帧序=**帧首 clear_list → OnFrame 录制（原语+文字）→ ms_engine_render 双面回放**；无命令=黄金帧路径（`4634E387E024BE90`）；GUI 平面参考锚点：**`06708F70DA02B6AA`**（C#/Python 同命令同值）。单线程模型（跨线程=MS_ERR_THREAD）；句柄=引擎拥有、UTF-8 字符串、错误码 0=OK/<0=绑定层/>0=引擎（1..9 保留给错误，音频句柄从 10 起）。
+**框架约定**：设计平面=**1280×800**（parity）；窗口面=Letterbox 按视口映射；命令帧序=**帧首 clear_list → OnFrame 录制（原语+文字）→ ms_engine_render 双面回放**；无命令=黄金帧路径（`4634E387E024BE90`）；GUI 平面参考锚点：**`855D0AC4CBCD78C2`**（C#/Python 同命令同值——v1.1 t-text-native 后刷新）。单线程模型（跨线程=MS_ERR_THREAD）；句柄=引擎拥有、UTF-8 字符串、错误码 0=OK/<0=绑定层/>0=引擎（1..9 保留给错误，音频句柄从 10 起）。
 
 ## 4. 已知边界（v1 诚实清单）
 
