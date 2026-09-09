@@ -1,13 +1,13 @@
 # Milestone
 
-Milestone 是一个全音游玩法引擎 / 游戏项目，支持多玩法、多谱面格式、谱面编辑器、AI 制谱助手、段位挑战、性能与压力自检等能力。
+Milestone 是**基于 HybridEngine 构建**的全音游玩法引擎 / 游戏项目，支持多玩法、多谱面格式、谱面编辑器、AI 制谱助手、段位挑战、性能与压力自检等能力。
 
 ## 主要特性
 
 - **多玩法支持**：Mania、Phigros、Arcaea、Cytus、osu!standard、ADOFAI、IIDX、回环作曲、Milestone 原生等多模式。
 - **多谱面格式**：`.osu` / `.mc` / `.sm` / `.ssc` / `.qua` / `.aff` / `.adofai` / `.txt` / `.json` / `.mil`。
 - **谱面编辑器**：支持有轨/无轨模式编辑、事件键帧、曲线、吸附、自动偏移、AI 检查等。
-- **引擎化运行时**：包含 Unity 式场景/组件/生命周期、Ruleset 玩法族、UI 组件、转场动画、软渲染与窗口宿主。
+- **HybridEngine 驱动**：使用 HybridEngine 的场景/组件/生命周期、Ruleset 玩法族、UI 组件、转场动画、软渲染与窗口宿主；游戏层/移植层见 `HybridEngine/dotnet/Milestone.Game`。
 - **AI 能力**：制谱检查、本地 AI 摘要、AI 演示/陪玩、AI 训练与段位压线校准。
 - **自检与压测**：`--selfcheck`、`--perftest`、`--stresstest`、`--edshot`、`--edsim` 等 CLI。
 
@@ -49,6 +49,8 @@ Milestone.exe --shotdemo           # 游玩自动截图
 - [编辑指南/零基础更改指南.md](编辑指南/零基础更改指南.md)
 - [编辑指南/文档精选/](编辑指南/文档精选/)
 
-## 关联项目
+## 基于 HybridEngine
 
-- [HybridEngine](https://github.com/E-tgyanefr/HybridEngine)：Milestone 引擎化/移植过程中使用的可编程游戏引擎。
+- [HybridEngine](https://github.com/E-tgyanefr/HybridEngine)：Milestone 所使用的基础游戏引擎。
+- HybridEngine 内的 Milestone 游戏层/移植版：`HybridEngine/dotnet/Milestone.Game`。
+- Milestone 通过 HybridEngine 的 C ABI / C# 绑定 / Python 绑定使用引擎能力。
