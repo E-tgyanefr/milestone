@@ -28,3 +28,26 @@ engine/
 引擎/
 include/ms/
 src/core/
+
+# 引擎源码隔离（.gitignore 硬门禁：即使路径名称变化也不允许引擎源码进仓库）
+**/引擎源码/
+**/引擎v3/
+**/engine-tree/
+**/engine-src/
+**/rhygemaker/
+**/hybridengine/
+_engine-source-canonical/
+_engine-source-quarantine/
+*.h
+*.hpp
+*.hh
+*.hxx
+*.c
+*.cc
+*.cpp
+*.cxx
+*.inl
+*.ipp
+*.ixx
+*.cppm
+*.pdb

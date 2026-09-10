@@ -30,6 +30,8 @@ dotnet build 游戏源码\Milestone.csproj -c Release
 dotnet run --project 游戏源码\Milestone.csproj -c Release -- --selfcheck
 ```
 
+> 旧版 `游戏源码\Milestone.csproj` 需要仓库外的 V2 引擎源码（通过 `ENGINE_V2_SOURCE` 或默认外置路径引用）；构建前/CI 门禁会拒绝仓库内出现引擎源码。HybridEngine 版见 `HybridEngine/dotnet/Milestone.Game`。
+
 常用 CLI：
 
 ```powershell
@@ -48,6 +50,20 @@ Milestone.exe --shotdemo           # 游玩自动截图
 - [编辑指南/工程说明.md](编辑指南/工程说明.md)
 - [编辑指南/零基础更改指南.md](编辑指南/零基础更改指南.md)
 - [编辑指南/文档精选/](编辑指南/文档精选/)
+
+## 引擎源码隔离（硬约束）
+
+本仓库只允许出现 Milestone 游戏层源码与**由引擎构建出的产物**（DLL/EXE/包/运行时数据）；任何引擎源码、头文件、工程文件、源码树都不得进入 Milestone。
+
+- 旧版 V2 构建的引擎源码必须放在仓库外，通过 `EngineV2Source` / 环境变量 `ENGINE_V2_SOURCE` 引用（默认外置路径：`..\..\_engine-source-canonical\legacy-v2\引擎源码\engine`）。
+- 全新 HybridEngine 版见 `HybridEngine/dotnet/Milestone.Game`，同样只消费引擎构建产物/绑定层，不复制引擎源码。
+- 提交、打包、发布前运行门禁：
+
+```powershell
+pwsh -NoProfile -File tools\check-engine-source.ps1 -IncludeHistory -FailOnFind
+```
+
+发现引擎源码（含历史提交路径）时返回退出码 1。CI 工作流 `.github/workflows/engine-source-guard.yml` 会自动执行该门禁。
 
 ## 基于 HybridEngine
 

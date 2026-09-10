@@ -89,8 +89,8 @@
 
 - `Milestone.exe --selfcheck`：运行引擎全部断言（判定预设/数学不变量/模块行为/谱面模型/判定追踪器闭环），
   结果写入 `selfcheck.log`（UTF-8），退出码 0=通过 / 1=失败——可用于 CI 与发布前体检。
-- 独立自检工程：`engine\Tests\EngineChecks`（`dotnet run --project engine\Tests\EngineChecks`）。
-- 引擎源码在 `engine\`（随宿主一起编译，渲染无关）；发布包见 `engine_引擎打包.zip`。
+- 独立自检工程：仓库外 `$(EngineV2Source)\Tests\EngineChecks`（`dotnet run --project $(EngineV2Source)\Tests\EngineChecks`）。
+- 引擎源码必须位于 Milestone 仓库之外（通过 `EngineV2Source` / `ENGINE_V2_SOURCE` 引用）；本仓库只保留游戏层源码与引擎构建产物。门禁见 `tools\check-engine-source.ps1`。
 
 ## 测试矩阵 / 性能测试 / 压力测试
 
@@ -172,7 +172,7 @@
 |---|---|
 | 源码\ | 游戏源码\源码\ |
 | Milestone.csproj / app.manifest / Program.cs / 根 obj\ | 游戏源码\ |
-| 引擎\engine\ | 引擎源码\engine\ |
+| 引擎\engine\ | 仓库外 `EngineV2Source`（默认 `..\..\_engine-source-canonical\legacy-v2\引擎源码\engine`；禁止进入仓库） |
 | 其他\Chart / 段位文件 / library_rating.json / exports | 输出产物\示例内容\ |
 | 发布\ | 输出产物\发布\ |
 | 构建产物\ | 输出产物\dev\ |

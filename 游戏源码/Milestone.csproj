@@ -23,6 +23,17 @@
     <DebugSymbols>false</DebugSymbols>
     <PublishReadyToRun>false</PublishReadyToRun>
   </PropertyGroup>
+  <PropertyGroup>
+    <!-- 引擎源码必须位于本仓库之外；引擎仅作为构建依赖使用。 -->
+    <EngineV2Source Condition="'$(EngineV2Source)' == '' and '$(ENGINE_V2_SOURCE)' != ''">$(ENGINE_V2_SOURCE)</EngineV2Source>
+    <EngineV2Source Condition="'$(EngineV2Source)' == ''">..\..\_engine-source-canonical\legacy-v2\引擎源码\engine</EngineV2Source>
+  </PropertyGroup>
+  <Target Name="ForbidEngineSourceInsideMilestoneRepo" BeforeTargets="BeforeBuild">
+    <Error Condition="Exists('$(MSBuildProjectDirectory)\..\引擎源码')" Text="引擎源码禁止进入 Milestone 仓库：请把引擎源码放在仓库外，通过 EngineV2Source / ENGINE_V2_SOURCE 引用。" />
+  </Target>
+  <Target Name="RequireExternalEngineV2" BeforeTargets="BeforeBuild" Condition="!Exists('$(EngineV2Source)\MilestoneEngine.csproj')">
+    <Error Text="未找到外部引擎源码：$(EngineV2Source)。Milestone 仓库不得包含引擎源码；请设置 ENGINE_V2_SOURCE。" />
+  </Target>
   <ItemGroup>
     <!-- Direct2D 硬件加速渲染（GPU） -->
     <PackageReference Include="SharpDX" Version="4.2.0" />
@@ -31,15 +42,15 @@
     <PackageReference Include="SharpDX.Mathematics" Version="4.2.0" />
   </ItemGroup>
   <ItemGroup>
-    <!-- t62 四目录迁移：源码=本工程内 源码\（SDK 自动包含）；引擎=..\引擎源码\engine（ProjectReference）；
+    <!-- t62 四目录迁移：源码=本工程内 源码\（SDK 自动包含）；引擎=仓库外 EngineV2Source（ProjectReference）；
          其他/构建产物/编辑指南/输出产物 均在工程外，无需排除 -->
     <Compile Remove="obj\**" />
   </ItemGroup>
   <ItemGroup>
-    <!-- 引擎示例/演示会编译进游戏（DemoRunner/MiniManiaForm/EngineGame 等由游戏层引用） -->
-    <Compile Include="..\引擎源码\engine\Samples\**\*.cs" />
+    <!-- 引擎示例/演示由仓库外 EngineV2Source 编译进游戏（DemoRunner/MiniManiaForm/EngineGame 等由游戏层引用） -->
+    <Compile Include="$(EngineV2Source)\Samples\**\*.cs" Condition="Exists('$(EngineV2Source)\Samples')" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\引擎源码\engine\MilestoneEngine.csproj" />
+    <ProjectReference Include="$(EngineV2Source)\MilestoneEngine.csproj" Condition="Exists('$(EngineV2Source)\MilestoneEngine.csproj')" />
   </ItemGroup>
 </Project>
