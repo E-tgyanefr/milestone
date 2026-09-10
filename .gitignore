@@ -20,3 +20,11 @@ _devtmp/
 *_work/
 输出产物/
 构建产物/
+
+# 禁止任何引擎源码进入 Milestone 仓库（引擎仅作为构建依赖使用）
+引擎源码/
+引擎v3/
+engine/
+引擎/
+include/ms/
+src/core/
