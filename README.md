@@ -70,3 +70,4 @@ pwsh -NoProfile -File tools\check-engine-source.ps1 -IncludeHistory -FailOnFind
 - [HybridEngine](https://github.com/E-tgyanefr/HybridEngine)：Milestone 所使用的基础游戏引擎。
 - HybridEngine 内的 Milestone 游戏层/移植版：`HybridEngine/dotnet/Milestone.Game`。
 - Milestone 通过 HybridEngine 的 C ABI / C# 绑定 / Python 绑定使用引擎能力。
+- 2026 UI 重设计：`HybridEngine/dotnet/Milestone.Game` 全部页面（主菜单/选歌/设置/结算/游玩 HUD/编辑器等）已迁移到 `HybridEngine.Ui` 设计系统（Aurora 主题、玻璃面板、阴影/渐变、换行/省略、控件与动画）。
